@@ -1,0 +1,293 @@
+@media screen {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+#navbar {
+    /* background-color: rgb(221, 29, 61); */
+    background: linear-gradient(45deg, rgb(155, 61, 77), rgb(221, 29, 61));
+    padding: 1.3em;
+    box-shadow: 0 0 0 1px rgb(10, 10, 10);
+}
+
+#navbar .links ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    text-align: center;
+    max-width: 100%;
+    width: 97%;
+}
+
+#navbar .links ul .link {
+    /* width: 6em; */
+    list-style: none;
+}
+
+#navbar .links ul .link a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.38rem;
+    padding: 1em;
+    font-weight: normal;
+}
+
+#navbar .links ul .link a:hover {
+    background-color: rgb(23, 63, 65);
+}
+
+#welcome-section {
+    /* background-color: rgb(54, 47, 47); */
+    background: linear-gradient(45deg,rgb(82, 80, 80), black);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: clip; */
+}
+
+#welcome-section .introduction .my-intro {
+    color: white;
+    font-size: 2.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-shadow: 0 0 1px 1px black;
+    text-align: center;
+}
+
+#welcome-section .introduction .job-description {
+    color: rgb(241, 64, 93);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+#projects {
+    /* background-color: rgb(97, 97, 153); */
+    background: linear-gradient(45deg, rgb(133, 92, 133), rgb(97, 97, 153));
+    /* height: 100vh; */
+}
+
+#projects .my-projects .project-title {
+    color: white;
+    font-size: 2.25rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 10%;
+}
+
+#projects .my-projects .title-line {
+    width: 61%;
+    margin-left: 20%;
+    margin-top: 5px;
+}
+
+#projects .my-projects .project-tile {
+    margin: 5% 2% 5% 2%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px; 
+    flex-wrap: wrap;
+}
+
+#projects .my-projects .project-tile a {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.363);
+    width: 25em;
+    height: 23em;
+    text-align: center;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    /* transition-duration: 1s; */
+    /* padding: 10px; */
+}
+
+#projects .my-projects .project-tile a:hover {
+    /* transform: scale(1.05); */
+    /* transition-duration: 1s; */
+    box-shadow: 2px 2px 10px rgb(163, 34, 55);
+}
+
+#projects .my-projects .project-tile a img {
+    width: 25em;
+    height: 19em;
+    border-radius: 10px;
+
+}
+
+#projects .my-projects .project-tile a .img-title {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 15px;
+}
+
+#projects .my-projects .project-tile a .code {
+    color: rgb(235, 79, 105);
+    display: none;
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#projects .my-projects .project-tile a:hover .code {
+    display: inline;
+    position: absolute;
+}
+
+#projects .my-projects .project-tile a:hover .code.left {
+    margin-left: -15px;
+    margin-top: 15px;
+}
+
+#projects .my-projects .project-tile a:hover .code.right {
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+#projects .my-projects button {
+    background-color: rgba(0, 0, 0, 0.363);
+    color: white;
+    font-size: 1.30rem;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 15%;
+    margin-left: 35%;
+    width: 19em;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
+}
+
+#projects .my-projects button a {
+    color: white;
+    text-decoration: none;
+}
+
+#projects .my-projects button:hover {
+    background-color:  rgb(163, 34, 55);
+    box-shadow: 2px 2px 5px rgb(163, 34, 55);
+    cursor: pointer;
+}
+
+/* #projects .my-projects button:hover .code {
+    margin-left: 5px;
+} */
+
+#profile-link {
+    background: linear-gradient(45deg,rgb(82, 80, 80), rgb(29, 25, 25));
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-link .contacts {
+    color: white;
+}
+
+#profile-link .contacts .contact-title {
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#profile-link .contacts p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: normal;
+    text-align: center;
+    font-style: italic;
+    margin-top: 15px;
+    margin-bottom: 5%;
+}
+
+#profile-link .contacts .contact-links ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* text-align: center; */
+}
+
+#profile-link .contacts .contact-links li {
+    list-style: none;
+}
+
+#profile-link .contacts .contact-links a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.38rem;
+    padding: 1em;
+    font-weight: normal;
+    text-shadow: 2px 2px 5px black;
+}
+
+#profile-link .contacts .contact-links a:hover {
+    text-shadow: 2px 2px 10px black;
+    /* transform: scale(1.5);
+    transition-duration: 1s; */
+}
+
+#profile-link .contacts .footer-break {
+    margin-top: 8%;
+    width: 100vw;
+    height: 0.230em;
+    background-color: rgb(85, 11, 23);
+    border: none;
+}
+
+#profile-link .contact-links ul li {
+    transition-duration: 1s;
+}
+
+#profile-link .contact-links ul li:hover {
+    transform: translateY(10px);
+    transition-duration: 1s;
+}
+
+#profile-link .footer-detail {
+    font-weight: 300;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-top: 8%; */
+    padding: 2rem;
+}
+
+#profile-link .footer-info {
+    padding: 30px;
+}
+
+#profile-link .copyright {
+    padding: 45px;
+}
+
+#profile-link .copyright a {
+    color: white;
+    text-decoration: underline;
+}
